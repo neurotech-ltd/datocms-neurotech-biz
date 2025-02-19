@@ -1,0 +1,53 @@
+{
+  "name": "datocms-neurotech-biz",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "generate-schema": "dotenv -c -- bash -c 'gql.tada generate schema https://graphql.datocms.com --header \"X-Exclude-Invalid: true\" --header \"Authorization: $PRIVATE_DATOCMS_PUBLISHED_CONTENT_CDA_TOKEN\"'",
+    "generate-schema-migration": "dotenv -c -- bash -c 'gql.tada generate schema https://graphql.datocms.com --header \"X-Exclude-Invalid: true\" --header \"Authorization: $PRIVATE_DATOCMS_PUBLISHED_CONTENT_CDA_TOKEN\" --header \"X-Environment: $NEXT_DATOCMS_ENVIRONMENT\"'",
+    "generate-schema-output": "dotenv -c -- bash -c 'gql.tada generate output'",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "prepare": "npx simple-git-hooks && npm run generate-schema"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/kit": "^2.9.1",
+    "@sveltejs/vite-plugin-svelte": "^5.0.1",
+    "@types/jsdom": "^21.1.7",
+    "@types/jsonwebtoken": "^9.0.6",
+    "dotenv-cli": "^7.4.2",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.2.6",
+    "simple-git-hooks": "^2.11.1",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.1.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@datocms/cda-client": "^0.2.5",
+    "@datocms/cli": "^2.0.15",
+    "@datocms/cma-client": "^3.3.15",
+    "@datocms/svelte": "v4.0.1",
+    "@mux/mux-player": "^3.1.0",
+    "datocms-structured-text-to-plain-text": "^4.0.2",
+    "datocms-structured-text-utils": "^4.0.1",
+    "gql.tada": "^1.8.10",
+    "highlight.js": "^11.10.0",
+    "jsdom": "^25.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "sanitize.css": "^13.0.0",
+    "serialize-error": "^11.0.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run format"
+  }
+}
