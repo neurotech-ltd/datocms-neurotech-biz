@@ -13,12 +13,18 @@
 </script>
 
 <div class="hero-image-block">
-    <ResponsiveImage data="{unmaskedBlock.image.responsiveImage}"></ResponsiveImage>
+    <ResponsiveImage data="{unmaskedBlock.image.responsiveImage}" imgClass="hero-image-control"></ResponsiveImage>
 </div>
 
 <style>
     .hero-image-block {
         width: 100%;
         min-height: 400px;
+        max-height: 560px;
+    }
+
+    :global(.hero-image-block > picture > .hero-image-control){
+        max-height: 560px;
+        object-fit: cover;
     }
 </style>

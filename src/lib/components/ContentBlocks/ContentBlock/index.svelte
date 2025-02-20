@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import {onMount} from 'svelte';
   import Inview from '../../Inview/index.svelte';
   import {SectionBlockFragment} from "../SectionBlock/fragments";
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
@@ -60,8 +60,8 @@
 <!--{/if}-->
 <!--{/snippet}-->
 
-<div class="content-block">
-  <h2 class="content-bloc-header">{unmaskedBlock.header}</h2>
+<div class="content-block {unmaskedBlock.layoutTemplate} {unmaskedBlock.style}">
+    <h2 class="content-bloc-header">{unmaskedBlock.header}</h2>
     <StructuredText
             data={unmaskedBlock.structuredText}
             components={[
@@ -99,45 +99,71 @@
 <!--{/if}-->
 
 <style>
-  /* set default margins of content.*/
-  .content-block {
-    display: block;
-    margin: 0 var(--page-margin) var(--page-margin) var(--bloc-margin-bottom);
-    width: auto;
-    height: fit-content;
-    flex: 1 1 0;
+    /* set default margins of content.*/
+    .content-block {
+        display: block;
+        /*margin: 0 var(--page-margin) var(--page-margin) var(--bloc-margin-bottom);*/
+        margin: 0;
+        width: auto;
+        height: fit-content;
+        flex: 1 1 0;
 
-    /*Added to avoid scroll behaviour on parent element. (on page/slug )*/
-    overflow-x: clip;
-    max-width: 100vw;
-  }
-
-  .content-maxWidth {
-  }
-
-  .content-align-bottom {
-    align-content: flex-end;
-    height: 100%;
-  }
-
-  .content-align-top {
-  }
-
-  /* remove page padding so elements sit flush with edges of page. */
-  .flush {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  @media (min-width: 768px) {
-    .content-maxWidth {
-      max-width: var(--page-max-content-width);
+        /*Added to avoid scroll behaviour on parent element. (on page/slug )*/
+        overflow-x: clip;
+        max-width: 100vw;
     }
-  }
 
-  @media (min-width: 1024px) {
-    .content-maxWidth {
-      max-width: var(--page-max-content-width);
+    .on_light {
+        /*    Dark text on light background */
+        background-color: #eaeaea;
+        --text-color:#1C346C;
     }
-  }
+
+    .on_dark {
+        background-color: #1C346C;
+        --text-color:white;
+    }
+
+    .centred_text_block {
+        text-align: center;
+        align-content: center;
+        min-height: 400px;
+        padding:var(--page-margin)
+    }
+
+    .content-bloc-header {
+        font-family: "Lato", serif;
+        font-weight: 700;
+        font-size: 72px;
+        /*color: #1C346C;*/
+    }
+
+    /*.content-maxWidth {*/
+    /*}*/
+
+    /*.content-align-bottom {*/
+    /*    align-content: flex-end;*/
+    /*    height: 100%;*/
+    /*}*/
+
+    /*.content-align-top {*/
+    /*}*/
+
+    /*!* remove page padding so elements sit flush with edges of page. *!*/
+    /*.flush {*/
+    /*    margin-left: 0;*/
+    /*    margin-right: 0;*/
+    /*}*/
+
+    /*@media (min-width: 768px) {*/
+    /*    .content-maxWidth {*/
+    /*        max-width: var(--page-max-content-width);*/
+    /*    }*/
+    /*}*/
+
+    /*@media (min-width: 1024px) {*/
+    /*    .content-maxWidth {*/
+    /*        max-width: var(--page-max-content-width);*/
+    /*    }*/
+    /*}*/
 </style>

@@ -5,12 +5,11 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Rebuilt fragments and dato models.">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/fragments.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/index.svelte" afterDir="false" />
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Added HeroImage Block">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/fragments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +101,7 @@
       <workItem from="1733851413434" duration="21639000" />
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
-      <workItem from="1739975630582" duration="22804000" />
-    </task>
-    <task id="LOCAL-00010" summary="Various tweeks and updates to layouts and styles.">
-      <created>1732650557228</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1732650557228</updated>
+      <workItem from="1739975630582" duration="24728000" />
     </task>
     <task id="LOCAL-00011" summary="graphql tweeks">
       <created>1732718467602</created>
@@ -447,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740073263809</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Added HeroImage Block">
+      <created>1740074291398</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1740074291398</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="seriously. android chrome reports wrong height. kmn" />
     <MESSAGE value="trying dvd units" />
     <MESSAGE value="Addressing issue with mobile layout due to incorect width sizing on mobile." />
     <MESSAGE value="Fixed a link underline and graphql bug" />
@@ -502,7 +500,8 @@
     <MESSAGE value="Remember intelij settings." />
     <MESSAGE value="Updated config for static export" />
     <MESSAGE value="Rebuilt fragments and dato models." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebuilt fragments and dato models." />
+    <MESSAGE value="Added HeroImage Block" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HeroImage Block" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
