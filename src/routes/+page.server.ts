@@ -1,15 +1,16 @@
-import { InlineItemFragment } from '$lib/components/InlineItem/fragments';
-import { ItemLinkFragment } from '$lib/components/ItemLink/fragments';
-import { TagFragment } from '$lib/datocms/commonFragments';
-import { graphql } from '$lib/datocms/graphql';
-import { generateRealtimeSubscription } from '$lib/datocms/queries';
-import { error } from '@sveltejs/kit';
-import type { PageServerLoad } from './$types';
-import { ImageBlockFragment } from '$lib/components/Block/ImageBlock/fragments';
-import { BlockLayoutFragment } from '../lib/components/BlockLayout/fragments';
-import { BlockFragment } from '$lib/components/Block/fragments';
+import {InlineItemFragment} from '$lib/components/InlineItem/fragments';
+import {ItemLinkFragment} from '$lib/components/ItemLink/fragments';
+import {TagFragment} from '$lib/datocms/commonFragments';
+import {graphql} from '$lib/datocms/graphql';
+import {generateRealtimeSubscription} from '$lib/datocms/queries';
+import {error} from '@sveltejs/kit';
+import type {PageServerLoad} from './$types';
+import {ImageBlockFragment} from '$lib/components/Block/ImageBlock/fragments';
+import {ContentBlocksFragment} from '../lib/components/ContentBlocks/fragments';
 
-import { browser } from '$app/environment';
+import {browser} from '$app/environment';
+import {NavigationFragment} from "../lib/components/NavigationBlock/fragments";
+
 /**
  * The GraphQL query that will be executed for this route to generate the page
  * content and metadata.
@@ -18,64 +19,52 @@ import { browser } from '$app/environment';
  */
 const query = graphql(
   /* GraphQL */ `
-    query PageQuery {
-      homepage {
-        _seoMetaTags {
-          ...TagFragment
-        }
-        title
-        profileImage {
-          alt
-          responsiveImage {
-            src
-          }
-        }
-        _firstPublishedAt
-        structuredText {
-          value
-          blocks {
-            ... on RecordInterface {
-              id
-              __typename
+        query PageQuery {
+            homepage {
+                _seoMetaTags {
+                    ...TagFragment
+                }
+                title
+                profileImage {
+                    alt
+                    responsiveImage {
+                        src
+                    }
+                }
+                navigation{
+                    ...NavigationFragment
+                }
+                _firstPublishedAt
+                content{
+                    ...ContentBlocksFragment
+                }
+                pages {
+                    title
+                    slug
+                }
+                projects {
+                    title
+                    shortDescription {
+                        value
+                    }
+                    slug
+                    heroImage {
+                        alt
+                        responsiveImage {
+                            src
+                        }
+                    }
+                }
             }
-            ...BlockFragment
-          }
-          links {
-            ... on RecordInterface {
-              id
-              __typename
-            }
-            ...ItemLinkFragment
-            ...InlineItemFragment
-          }
         }
-        pages {
-          title
-          slug
-        }
-        projects {
-          title
-          shortDescription {
-            value
-          }
-          slug
-          heroImage {
-            alt
-            responsiveImage {
-              src
-            }
-          }
-        }
-      }
-    }
   `,
   [
     TagFragment,
-    BlockFragment,
     ItemLinkFragment,
     InlineItemFragment,
     ImageBlockFragment,
-    // BlockLayoutFragment,
+    ContentBlocksFragment,
+    NavigationFragment,
   ],
 );
 
@@ -91,5 +80,5 @@ export const load: PageServerLoad = async (event) => {
     error(404, 'Page not found');
   }
 
-  return { subscription, props: { isBrowser: browser } };
+  return {subscription, props: {isBrowser: browser}};
 };

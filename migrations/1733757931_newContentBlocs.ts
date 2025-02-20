@@ -53,7 +53,7 @@
 //   });
 //
 //   console.log(
-//     'Update Structured text field "Structured Text" (`structured_text`) in block model "content bloc" (`content_bloc`)',
+//     'Update Structured text field "Structured Text" (`structured_text`) in block model "content bloc" (`content_block`)',
 //   );
 //   await client.fields.update('G8fmW8IuTym4AuNeiq5v2A', {
 //     label: 'Structured Text',

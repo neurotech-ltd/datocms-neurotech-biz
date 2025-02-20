@@ -5,12 +5,37 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Remember intelij settings.">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Updated config for static export">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/NavigationBlock/fragments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/NavigationBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.graphqlconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.graphqlconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/1733757931_newContentBlocs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/1733757931_newContentBlocs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema_inteli_plugin.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema_inteli_plugin.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/ContentBloc/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/fragments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/ContentBloc/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/SectionBlock/fragments.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/SectionBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/SectionBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/fragments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BlockLayout/index.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ResponsiveImage/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ResponsiveImage/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/datocms/graphql-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/datocms/graphql-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +76,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/NVPACK/android-sdk-windows" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/components/NavigationBlock" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -66,11 +91,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\workspace_websites\datocms-neurotech-biz" />
-      <recent name="G:\workspace_websites\datocms-emile-info\src\lib\components\Image" />
-      <recent name="G:\workspace_websites\datocms-emile-info\src\routes\page" />
-      <recent name="G:\workspace_websites\datocms-emile-info\src\lib\components\Inview" />
-      <recent name="G:\workspace_websites\datocms-emile-info\src\lib\components\BlockLayout" />
+      <recent name="G:\workspace_websites\datocms-neurotech-biz\src\lib\components\NavigationBlock" />
+      <recent name="G:\workspace_websites\datocms-neurotech-biz\src\lib\components\ContentBlocks" />
+      <recent name="G:\workspace_websites\datocms-neurotech-biz\src\lib\components\ContentBlocks\ContactBlock" />
+      <recent name="G:\workspace_websites\datocms-neurotech-biz\src\lib\components\ContentBlocks\ProjectsBlock" />
+      <recent name="G:\workspace_websites\datocms-neurotech-biz\src\lib\components\BlockLayout\TeamBlock" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\workspace_websites\datocms-neurotech-biz\assets" />
@@ -102,14 +127,7 @@
       <workItem from="1733851413434" duration="21639000" />
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
-      <workItem from="1739975630582" duration="5805000" />
-    </task>
-    <task id="LOCAL-00008" summary="Client logo text css corrected.">
-      <created>1730809027710</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1730809027710</updated>
+      <workItem from="1739975630582" duration="21753000" />
     </task>
     <task id="LOCAL-00009" summary="Added sub nav to homepage and styled project pages.">
       <created>1730894691197</created>
@@ -447,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734192027898</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Updated config for static export">
+      <created>1740051863690</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1740051863690</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed flex sizing issue." />
     <MESSAGE value="Only apply max width on wide breakpoints." />
     <MESSAGE value="seriously. android chrome reports wrong height. kmn" />
     <MESSAGE value="trying dvd units" />
@@ -502,7 +526,8 @@
     <MESSAGE value="Fix intellij formatting." />
     <MESSAGE value="Removed unecessary files." />
     <MESSAGE value="Remember intelij settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remember intelij settings." />
+    <MESSAGE value="Updated config for static export" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated config for static export" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

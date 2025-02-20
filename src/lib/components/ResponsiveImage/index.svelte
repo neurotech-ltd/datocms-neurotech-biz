@@ -30,7 +30,7 @@
 
 <!-- TODO(emileswain) Determine what this does and why.-->
 <style>
-  :global(img.landscape) {
-    width: 100% !important;
-  }
+  /*:global(img.landscape) {*/
+  /*  width: 100% !important;*/
+  /*}*/
 </style>

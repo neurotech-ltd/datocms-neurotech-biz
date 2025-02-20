@@ -3,11 +3,11 @@
 
   import type { PageData } from './$types';
   import LayoutBloc from '../../../lib/components/LayoutBloc/index.svelte';
-  import ContentBloc from '../../../lib/components/BlockLayout/ContentBloc/index.svelte';
+  import ContentBloc from '../../../lib/components/ContentBlocks/ContentBlock/index.svelte';
   import PageBloc from '../../../lib/components/PageBloc/index.svelte';
   import TopNav from '../../../lib/components/TopNav/index.svelte';
   import Icon from '../../../lib/components/Icon/index.svelte';
-  import BlockLayout from '../../../lib/components/BlockLayout/index.svelte';
+  import BlockLayout from '../../../lib/components/ContentBlocks/index.svelte';
 
   interface Props {
     data: PageData;

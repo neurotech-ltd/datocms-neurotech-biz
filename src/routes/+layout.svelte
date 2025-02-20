@@ -268,17 +268,17 @@
     font-weight: 100;
   }
 
-  :global(nav) {
-    background-color: #333;
-    color: #fff;
-  }
+  /*:global(nav) {*/
+  /*  background-color: #333;*/
+  /*  color: #fff;*/
+  /*}*/
 
-  :global(nav a) {
-    color: #fff;
-    text-decoration: none;
-  }
+  /*:global(nav a) {*/
+  /*  color: #fff;*/
+  /*  text-decoration: none;*/
+  /*}*/
 
-  :global(nav a:hover) {
-    background-color: #575757;
-  }
+  /*:global(nav a:hover) {*/
+  /*  background-color: #575757;*/
+  /*}*/
 </style>

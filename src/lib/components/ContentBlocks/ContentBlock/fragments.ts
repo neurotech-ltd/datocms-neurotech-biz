@@ -19,42 +19,44 @@ import { VideoBlockFragment } from '../../Block/VideoBlock/fragments';
  * Learn more: https://gql-tada.0no.co/guides/fragment-colocation
  */
 
-export const ContentBlocFragment = graphql(
+export const ContentBlockFragment = graphql(
   /* GraphQL */ `
-    fragment ContentBlocFragment on ContentBlocRecord {
-      id
-      __typename
-      header
-      structuredText {
-        value
-        blocks {
-          ... on RecordInterface {
+        fragment ContentBlockFragment on ContentBlockRecord {
             id
             __typename
-          }
-          ... on ImageBlockRecord {
-            ...ImageBlockFragment
-          }
-          ... on ImageGalleryBlockRecord {
-            ...ImageGalleryBlockFragment
-          }
-          ... on VideoBlockRecord {
-            ...VideoBlockFragment
-          }
-          ... on ImageByTextBlockRecord {
-            ...ImageByTextBlockFragment
-          }
+            header
+            layoutTemplate
+            style
+            structuredText {
+                value
+                blocks {
+                    ... on RecordInterface {
+                        id
+                        __typename
+                    }
+                    ... on ImageBlockRecord {
+                        ...ImageBlockFragment
+                    }
+                    ... on ImageGalleryBlockRecord {
+                        ...ImageGalleryBlockFragment
+                    }
+                    ... on VideoBlockRecord {
+                        ...VideoBlockFragment
+                    }
+                    ... on ImageByTextBlockRecord {
+                        ...ImageByTextBlockFragment
+                    }
+                }
+                links {
+                    ... on RecordInterface {
+                        id
+                        __typename
+                    }
+                    ...ItemLinkFragment
+                    ...InlineItemFragment
+                }
+            }
         }
-        links {
-          ... on RecordInterface {
-            id
-            __typename
-          }
-          ...ItemLinkFragment
-          ...InlineItemFragment
-        }
-      }
-    }
   `,
   [
     ItemLinkFragment,
@@ -70,7 +72,7 @@ export const ContentBlocFragment = graphql(
 //
 // export const ContentBlocFragment = graphql(
 //     /* GraphQL */ `
-//     fragment ContentBlocFragment on ContentBlocRecord {
+//     fragment ContentBlocFragment on ContentBlockRecord {
 //       header
 //       content {
 //         ... BlockFragment

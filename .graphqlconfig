@@ -1,6 +1,7 @@
 {
   "name": "DatoCMS neurotech.biz GraphQL Schema",
   "schemaPath": "schema_inteli_plugin.graphql",
+  "includes": ["*.graphql", "*.svelte", "*.ts", "*.js"],
   "extensions": {
     "endpoints": {
       "Default GraphQL Endpoint": {

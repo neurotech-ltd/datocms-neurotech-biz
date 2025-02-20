@@ -18,7 +18,7 @@
   import { ColorUtils } from '$lib/colorUtils';
   import Icon from '../../../lib/components/Icon/index.svelte';
   import Pill from '../../../lib/components/Pill/index.svelte';
-  import BlockLayout from '../../../lib/components/BlockLayout/index.svelte';
+  import BlockLayout from '../../../lib/components/ContentBlocks/index.svelte';
   import MyImage from '../../../lib/components/MyImage/index.svelte';
 
   // just in case it becomes a problem https://github.com/lazd/iNoBounce
