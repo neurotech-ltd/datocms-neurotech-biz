@@ -3,6 +3,8 @@ import { graphql } from '$lib/datocms/graphql';
 import { generateRealtimeSubscription } from '$lib/datocms/queries';
 import type { LayoutServerLoad } from './$types';
 
+export const prerender = true;
+
 const query = graphql(
   /* GraphQL */ `
     query RootQuery {
