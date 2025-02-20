@@ -6,6 +6,7 @@
   import ProjectsBlock from "../ProjectsBlock/index.svelte";
   import ContactBlock from "../ContactBlock/index.svelte";
   import MapBlock from "../MapBlock/index.svelte";
+  import HeroImageBlock from "../HeroImageBlock/index.svelte";
 
   interface Props {
     data: FragmentOf<typeof SectionBlockFragment>;
@@ -43,6 +44,8 @@
             <ContactBlock data={blocContent}></ContactBlock>
         {:else if blocContent.__typename === 'MapBlockRecord'}
             <MapBlock data={blocContent}></MapBlock>
+        {:else if blocContent.__typename === 'HeroImageBlockRecord'}
+            <HeroImageBlock data={blocContent}></HeroImageBlock>
         {/if}
     {/each}
 </div>

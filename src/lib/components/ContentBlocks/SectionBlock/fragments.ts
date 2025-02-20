@@ -1,9 +1,10 @@
-import { graphql } from '$lib/datocms/graphql';
-import { ContentBlockFragment } from '../ContentBlock/fragments';
+import {graphql} from '$lib/datocms/graphql';
+import {ContentBlockFragment} from '../ContentBlock/fragments';
 import {TeamBlockFragment} from "../TeamBlock/fragments";
 import {ProjectsBlockFragment} from "../ProjectsBlock/fragments";
 import {ContactBlockFragment} from "../ContactBlock/fragments";
 import {MapBlockFragment} from "../MapBlock/fragments";
+import {HeroImageBlockFragment} from "../HeroImageBlock/fragments";
 
 /**
  * Let's define the GraphQL fragment needed for the component to function.
@@ -47,8 +48,12 @@ export const SectionBlockFragment = graphql(
                 ... on MapBlockRecord{
                     ...MapBlockFragment
                 }
+                ... on HeroImageBlockRecord
+                {
+                    ...HeroImageBlockFragment
+                }
             }
         }
   `,
-  [ContentBlockFragment,TeamBlockFragment, ProjectsBlockFragment, ContactBlockFragment, MapBlockFragment],
+  [ContentBlockFragment, TeamBlockFragment, ProjectsBlockFragment, ContactBlockFragment, MapBlockFragment, HeroImageBlockFragment,],
 );
