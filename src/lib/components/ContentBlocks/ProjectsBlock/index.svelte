@@ -16,7 +16,9 @@
 <div class="projects-block">
     <div class="project-header">
         <h1>{unmaskedBlock.title}</h1>
-        <p>{unmaskedBlock.description}</p>
+        {#if unmaskedBlock.description }
+            <p>{unmaskedBlock.description}</p>
+        {/if}
     </div>
     <div class="project-list">
         {#each unmaskedBlock.projects as project, i}
@@ -48,6 +50,10 @@
         align-content: center;
         text-align: center;
         padding: var(--page-margin);
+    }
+
+    .project-header h1 {
+        margin-bottom: 0;
     }
 
     .project-list {

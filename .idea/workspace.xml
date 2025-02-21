@@ -5,13 +5,10 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Styling for projects">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Styling for map and contact us.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/fragments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +100,7 @@
       <workItem from="1733851413434" duration="21639000" />
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
-      <workItem from="1739975630582" duration="35503000" />
-    </task>
-    <task id="LOCAL-00014" summary="safari text issue.">
-      <created>1732793865558</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1732793865558</updated>
+      <workItem from="1739975630582" duration="36637000" />
     </task>
     <task id="LOCAL-00015" summary="safari text issue.">
       <created>1732794394462</created>
@@ -448,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740155656468</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Styling for map and contact us.">
+      <created>1740157751039</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1740157751039</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added basic fade animation." />
     <MESSAGE value="removed the hidden as it may affect seo. Need to check for animation glitches." />
     <MESSAGE value="Added reference articles for animating and issues with SSR, SSG etc." />
     <MESSAGE value="WIP - detect in view animation." />
@@ -503,7 +499,8 @@
     <MESSAGE value="Styling for Neurotech" />
     <MESSAGE value="Styling for Team page" />
     <MESSAGE value="Styling for projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling for projects" />
+    <MESSAGE value="Styling for map and contact us." />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling for map and contact us." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
