@@ -5,11 +5,10 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Added HeroImage Block">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Styling for Neurotech">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContentBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/HeroImageBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/fragments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/TeamBlock/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,14 +100,7 @@
       <workItem from="1733851413434" duration="21639000" />
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
-      <workItem from="1739975630582" duration="24728000" />
-    </task>
-    <task id="LOCAL-00011" summary="graphql tweeks">
-      <created>1732718467602</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1732718467602</updated>
+      <workItem from="1739975630582" duration="30161000" />
     </task>
     <task id="LOCAL-00012" summary="Styled homepage">
       <created>1732735685856</created>
@@ -446,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740074291398</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Styling for Neurotech">
+      <created>1740077324722</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1740077324722</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying dvd units" />
     <MESSAGE value="Addressing issue with mobile layout due to incorect width sizing on mobile." />
     <MESSAGE value="Fixed a link underline and graphql bug" />
     <MESSAGE value="Added basic fade animation." />
@@ -501,7 +499,8 @@
     <MESSAGE value="Updated config for static export" />
     <MESSAGE value="Rebuilt fragments and dato models." />
     <MESSAGE value="Added HeroImage Block" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added HeroImage Block" />
+    <MESSAGE value="Styling for Neurotech" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling for Neurotech" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
