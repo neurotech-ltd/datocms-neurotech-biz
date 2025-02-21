@@ -197,27 +197,27 @@
     /*    }*/
     /*}*/
 
-    button {
-        font-size: 2em; /* Adjust size to match your h1 */
-        font-weight: 100;
-        background: none;
-        border: none;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-decoration-color: var(--txt-btn-color-stroke);
-        color: var(--txt-btn-color-fill); /* Inherit the color from parent elements */
-        cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-        margin-right: 8px;
-    }
+    /*button {*/
+    /*    font-size: 2em; !* Adjust size to match your h1 *!*/
+    /*    font-weight: 100;*/
+    /*    background: none;*/
+    /*    border: none;*/
+    /*    text-decoration: underline;*/
+    /*    text-decoration-thickness: 1px;*/
+    /*    text-decoration-color: var(--txt-btn-color-stroke);*/
+    /*    color: var(--txt-btn-color-fill); !* Inherit the color from parent elements *!*/
+    /*    cursor: pointer; !* Change cursor to pointer to indicate it's clickable *!*/
+    /*    margin-right: 8px;*/
+    /*}*/
 
-    button:hover {
-        color: var(--txt-btn-color-fill--hover);
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-decoration-color: var(--txt-btn-color-stroke--hover); /* Change underline color on hover */
-    }
+    /*button:hover {*/
+    /*    color: var(--txt-btn-color-fill--hover);*/
+    /*    text-decoration: underline;*/
+    /*    text-decoration-thickness: 1px;*/
+    /*    text-decoration-color: var(--txt-btn-color-stroke--hover); !* Change underline color on hover *!*/
+    /*}*/
 
-    button:focus {
-        outline: none; /* Remove focus outline */
-    }
+    /*button:focus {*/
+    /*    outline: none; !* Remove focus outline *!*/
+    /*}*/
 </style>

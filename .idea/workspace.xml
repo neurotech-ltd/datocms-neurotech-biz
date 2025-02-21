@@ -5,15 +5,13 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Styling for Team page">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Styling for projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/fragments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/page/[slug]/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/fragments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ContactBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/MapBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,14 +103,7 @@
       <workItem from="1733851413434" duration="21639000" />
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
-      <workItem from="1739975630582" duration="33603000" />
-    </task>
-    <task id="LOCAL-00013" summary="accessibility">
-      <created>1732738150414</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1732738150414</updated>
+      <workItem from="1739975630582" duration="35503000" />
     </task>
     <task id="LOCAL-00014" summary="safari text issue.">
       <created>1732793865558</created>
@@ -450,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740152013357</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Styling for projects">
+      <created>1740155656468</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1740155656468</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed a link underline and graphql bug" />
     <MESSAGE value="Added basic fade animation." />
     <MESSAGE value="removed the hidden as it may affect seo. Need to check for animation glitches." />
     <MESSAGE value="Added reference articles for animating and issues with SSR, SSG etc." />
@@ -505,7 +502,8 @@
     <MESSAGE value="Added HeroImage Block" />
     <MESSAGE value="Styling for Neurotech" />
     <MESSAGE value="Styling for Team page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling for Team page" />
+    <MESSAGE value="Styling for projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling for projects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
