@@ -4,7 +4,7 @@ import { generateRealtimeSubscription } from '$lib/datocms/queries';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { ResponsiveImageFragment } from '$lib/components/ResponsiveImage/fragments';
-import { BlockLayoutFragment } from '$lib//components/BlockLayout/fragments';
+import {ContentBlocksFragment} from "../../../lib/components/ContentBlocks/fragments";
 
 /**
  * The GraphQL query that will be executed for this route to generate the page
@@ -22,18 +22,9 @@ const query = graphql(
         title
         slug
         client
-        bgBorder {
-          hex
-        }
-        bgFill {
-          hex
-        }
         featurePills
         content {
-          ...BlockLayoutFragment
-        }
-        clientTextFill {
-          hex
+          ...ContentBlocksFragment
         }
         heroImage {
           responsiveImage {
@@ -47,7 +38,7 @@ const query = graphql(
       }
     }
   `,
-  [TagFragment, ResponsiveImageFragment, BlockLayoutFragment],
+  [TagFragment, ResponsiveImageFragment, ContentBlocksFragment],
 );
 
 /**

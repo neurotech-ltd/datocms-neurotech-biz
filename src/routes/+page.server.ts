@@ -42,19 +42,19 @@ const query = graphql(
                     title
                     slug
                 }
-                projects {
-                    title
-                    shortDescription {
-                        value
-                    }
-                    slug
-                    heroImage {
-                        alt
-                        responsiveImage {
-                            src
-                        }
-                    }
-                }
+#                projects {
+#                    title
+#                    shortDescription {
+#                        value
+#                    }
+#                    slug
+#                    heroImage {
+#                        alt
+#                        responsiveImage {
+#                            src
+#                        }
+#                    }
+#                }
             }
         }
   `,

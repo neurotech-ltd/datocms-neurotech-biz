@@ -384,6 +384,31 @@ type GlobalSeoField {
   twitterAccount: String
 }
 
+"""Block of type Hero Image Block (hero_image_block)"""
+type HeroImageBlockRecord implements RecordInterface {
+  _createdAt: DateTime!
+
+  """Editing URL"""
+  _editingUrl: String
+  _firstPublishedAt: DateTime
+  _isValid: BooleanType!
+  _modelApiKey: String!
+  _publicationScheduledAt: DateTime
+  _publishedAt: DateTime
+
+  """Generates SEO and Social card meta tags to be used in your frontend"""
+  _seoMetaTags(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+  ): [Tag!]!
+  _status: ItemStatus!
+  _unpublishingScheduledAt: DateTime
+  _updatedAt: DateTime!
+  id: ItemId!
+  image: FileField
+  title: String
+}
+
 union HomepageModelContentField = ContentBlockRecord | SectionBlockRecord
 
 union HomepageModelStructuredTextBlocksField = ImageBlockRecord | ImageByTextBlockRecord | ImageGalleryBlockRecord | VideoBlockRecord
@@ -2964,12 +2989,13 @@ input ProjectModelFilter {
   _updatedAt: UpdatedAtFilter
   _isValid: BooleanFilter
   client: StringFilter
+  description: TextFilter
   featurePills: StringFilter
   heroImage: FileFilter
   seoAnalysis: JsonFilter
   seoSettingsSocial: SeoFilter
-  shortDescription: StructuredTextFilter
   slug: SlugFilter
+  tagLine: TextFilter
   title: StringFilter
   OR: [ProjectModelFilter]
   AND: [ProjectModelFilter]
@@ -3002,12 +3028,6 @@ enum ProjectModelOrderBy {
   title_DESC
 }
 
-type ProjectModelShortDescriptionField {
-  blocks: [String!]!
-  links: [String!]!
-  value: JsonField!
-}
-
 """Record of type 📝 Project (project)"""
 type ProjectRecord implements RecordInterface {
   _createdAt: DateTime!
@@ -3030,13 +3050,20 @@ type ProjectRecord implements RecordInterface {
   _updatedAt: DateTime!
   client: String
   content: [ProjectModelContentField!]!
+  description(
+    """Process content as markdown"""
+    markdown: Boolean
+  ): String
   featurePills: String
   heroImage: FileField
   id: ItemId!
   seoAnalysis: JsonField
   seoSettingsSocial: SeoField
-  shortDescription: ProjectModelShortDescriptionField
   slug: String
+  tagLine(
+    """Process content as markdown"""
+    markdown: Boolean
+  ): String
   title: String!
 }
 
@@ -3386,7 +3413,7 @@ type ResponsiveImage {
   width: IntType!
 }
 
-union SectionBlockModelBlocsField = ContactBlockRecord | ContentBlockRecord | MapBlockRecord | ProjectsBlockRecord | TeamBlockRecord
+union SectionBlockModelBlocsField = ContactBlockRecord | ContentBlockRecord | HeroImageBlockRecord | MapBlockRecord | ProjectsBlockRecord | TeamBlockRecord
 
 """Block of type Section Block (section_block)"""
 type SectionBlockRecord implements RecordInterface {
@@ -3523,30 +3550,6 @@ input StringMatchesFilter {
   pattern: String!
   caseSensitive: BooleanType = false
   regexp: BooleanType = true
-}
-
-"""Specifies how to filter Structured Text fields values"""
-input StructuredTextFilter {
-  """Filter records based on a regular expression"""
-  matches: StringMatchesFilter
-
-  """Exclude records based on a regular expression"""
-  notMatches: StringMatchesFilter
-
-  """
-  Filter records with the specified field set as blank (null or single empty paragraph)
-  """
-  isBlank: BooleanType
-
-  """
-  Filter records with the specified field present (neither null, nor empty string)
-  """
-  isPresent: BooleanType
-
-  """
-  Filter records with the specified field defined (i.e. with any value) or not [DEPRECATED]
-  """
-  exists: BooleanType
 }
 
 type Tag {

@@ -7,7 +7,7 @@
   import PageBloc from '../../../lib/components/PageBloc/index.svelte';
   import TopNav from '../../../lib/components/TopNav/index.svelte';
   import Icon from '../../../lib/components/Icon/index.svelte';
-  import BlockLayout from '../../../lib/components/ContentBlocks/index.svelte';
+
 
   interface Props {
     data: PageData;
@@ -40,7 +40,7 @@
       </ContentBloc>
       <LayoutBloc direction="column">
         {#each page.content as content, i}
-          <BlockLayout data={content} />
+<!--          <BlockLayout data={content} />-->
         {/each}
       </LayoutBloc>
     </LayoutBloc>

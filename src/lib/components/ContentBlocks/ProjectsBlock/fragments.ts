@@ -1,4 +1,5 @@
 import {graphql} from '$lib/datocms/graphql';
+import {ResponsiveImageFragment} from "../../ResponsiveImage/fragments";
 
 /**
  */
@@ -13,9 +14,16 @@ export const ProjectsBlockFragment = graphql(
             title
             projects{
                 title
+                tagLine
+                description
+                heroImage{
+                    responsiveImage{
+                        ...ResponsiveImageFragment
+                    }
+                }
                 slug
             }
         }
   `,
-  [],
+  [ResponsiveImageFragment],
 );
