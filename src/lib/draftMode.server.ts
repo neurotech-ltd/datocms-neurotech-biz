@@ -1,14 +1,25 @@
-import { env } from '$env/dynamic/private';
-import { env as publicEnv } from '$env/dynamic/public';
-import type { RequestEvent } from '@sveltejs/kit';
-import jwt, { type JwtPayload } from 'jsonwebtoken';
+import {PRIVATE_SIGNED_COOKIE_JWT_SECRET} from '$env/static/private';
+import {PUBLIC_DRAFT_MODE_COOKIE_NAME} from '$env/static/public';
+
+// import { env as publicEnv } from '$env/static/public';
+import type {RequestEvent} from '@sveltejs/kit';
+import jwt, {type JwtPayload} from 'jsonwebtoken';
+
+// Added to be able to switch between static and public within code more easily.
+const envPrivate = {
+  PRIVATE_SIGNED_COOKIE_JWT_SECRET: PRIVATE_SIGNED_COOKIE_JWT_SECRET,
+}
+const publicEnv = {
+  PUBLIC_DRAFT_MODE_COOKIE_NAME: PUBLIC_DRAFT_MODE_COOKIE_NAME
+}
+
 
 /**
  * Generates a JSON Web Token (JWT) that is used as a signed cookie for entering
  * Draft Mode.
  */
 function jwtToken() {
-  return jwt.sign({ enabled: true }, env.PRIVATE_SIGNED_COOKIE_JWT_SECRET);
+  return jwt.sign({enabled: true}, envPrivate.PRIVATE_SIGNED_COOKIE_JWT_SECRET);
 }
 
 /**
@@ -48,7 +59,7 @@ export function isDraftModeEnabled(event: RequestEvent) {
   }
 
   try {
-    const payload = jwt.verify(cookie, env.PRIVATE_SIGNED_COOKIE_JWT_SECRET) as JwtPayload;
+    const payload = jwt.verify(cookie, envPrivate.PRIVATE_SIGNED_COOKIE_JWT_SECRET) as JwtPayload;
 
     return payload.enabled as boolean;
   } catch (e) {

@@ -1,10 +1,24 @@
-import { env as privateEnv } from '$env/dynamic/private';
-import { isDraftModeEnabled } from '$lib/draftMode.server';
-import { executeQuery } from '@datocms/cda-client';
-import type { QuerySubscriptionOptions } from '@datocms/svelte';
-import type { RequestEvent } from '@sveltejs/kit';
-import type { TadaDocumentNode } from 'gql.tada';
-import { print } from 'graphql';
+// import { env as privateEnv } from '$env/dynamic/private';
+import {
+  PRIVATE_DATOCMS_DRAFT_CONTENT_CDA_TOKEN,
+  PRIVATE_DATOCMS_PUBLISHED_CONTENT_CDA_TOKEN,
+  NEXT_DATOCMS_ENVIRONMENT
+} from '$env/static/private';
+
+
+import {isDraftModeEnabled} from '$lib/draftMode.server';
+import {executeQuery} from '@datocms/cda-client';
+import type {QuerySubscriptionOptions} from '@datocms/svelte';
+import type {RequestEvent} from '@sveltejs/kit';
+import type {TadaDocumentNode} from 'gql.tada';
+import {print} from 'graphql';
+
+// Added to be able to switch between static and public within code more easily.
+const privateEnv = {
+  PRIVATE_DATOCMS_DRAFT_CONTENT_CDA_TOKEN: PRIVATE_DATOCMS_DRAFT_CONTENT_CDA_TOKEN,
+  PRIVATE_DATOCMS_PUBLISHED_CONTENT_CDA_TOKEN: PRIVATE_DATOCMS_PUBLISHED_CONTENT_CDA_TOKEN,
+  NEXT_DATOCMS_ENVIRONMENT: NEXT_DATOCMS_ENVIRONMENT
+}
 
 /**
  * Returns options required to initialize real-time subscriptions to draft content using

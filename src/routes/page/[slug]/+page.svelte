@@ -19,6 +19,7 @@
 </script>
 
 {#if page}
+
   <!--
       The <Head> component provided by @datocms/svelte automates the creation of
       meta tags based on the `_seoMetaTags` present in a DatoCMS GraphQL query.
@@ -33,17 +34,17 @@
         <Icon type="home" />
       </a>
     </TopNav>
-    <LayoutBloc>
-      <ContentBloc>
-        <h1>{page.title}</h1>
-        <p>{page.shortDescription}</p>
-      </ContentBloc>
-      <LayoutBloc direction="column">
-        {#each page.content as content, i}
-<!--          <BlockLayout data={content} />-->
-        {/each}
-      </LayoutBloc>
-    </LayoutBloc>
+<!--    <LayoutBloc>-->
+<!--      <ContentBloc>-->
+<!--        <h1>{page.title}</h1>-->
+<!--        <p>{page.shortDescription}</p>-->
+<!--      </ContentBloc>-->
+<!--&lt;!&ndash;      <LayoutBloc direction="column">&ndash;&gt;-->
+<!--&lt;!&ndash;        {#each page.content as content, i}&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          <BlockLayout data={content} />&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        {/each}&ndash;&gt;-->
+<!--&lt;!&ndash;      </LayoutBloc>&ndash;&gt;-->
+<!--    </LayoutBloc>-->
   </PageBloc>
 {/if}
 

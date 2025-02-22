@@ -5,6 +5,7 @@ import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import {ContentBlocksFragment} from "../../../lib/components/ContentBlocks/fragments";
 
+
 /**
  * The GraphQL query that will be executed for this route to generate the page
  * content and metadata.
@@ -19,16 +20,21 @@ const query = graphql(
           ...TagFragment
         }
         title
-        shortDescription
-        _firstPublishedAt
-        content {
-          ...ContentBlocksFragment
-        }
+          slug
+#        shortDescription
+#        _firstPublishedAt
+#        content {
+#          ...ContentBlocksFragment
+#        }
       }
     }
   `,
-  [TagFragment, ContentBlocksFragment],
+  [TagFragment],
 );
+import type { EntryGenerator } from './$types';
+export const entries:EntryGenerator = () => {
+  return [	{ slug: 'test-page' }, ];
+};
 
 /**
  * Executes the query, and returns the result as initialData for potential
