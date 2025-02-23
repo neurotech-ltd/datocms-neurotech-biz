@@ -60,13 +60,6 @@
             <ContentBlocks data="{homepage.content}">
 
             </ContentBlocks>
-            <!--{#each homepage.content as block, i}-->
-            <!--    <ContentBloc>-->
-            <!--        <h1>{block.title}</h1>-->
-            <!--        <StructuredText data={block.shortDescription}/>-->
-            <!--        <Link href="/page/{block.slug}" rel="no-prefetch">Explore</Link>-->
-            <!--    </ContentBloc>-->
-            <!--{/each}-->
         </LayoutBloc>
     </PageBloc>
 {/if}

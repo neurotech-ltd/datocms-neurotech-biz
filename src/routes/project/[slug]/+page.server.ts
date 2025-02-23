@@ -5,6 +5,7 @@ import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { ResponsiveImageFragment } from '$lib/components/ResponsiveImage/fragments';
 import {ContentBlocksFragment} from "../../../lib/components/ContentBlocks/fragments";
+import {NavigationFragment} from "../../../lib/components/NavigationBlock/fragments";
 
 /**
  * The GraphQL query that will be executed for this route to generate the page
@@ -21,6 +22,10 @@ const query = graphql(
         }
         title
         slug
+        navigation{
+            ...NavigationFragment
+        }
+          
         client
         featurePills
         content {
@@ -33,12 +38,10 @@ const query = graphql(
         }
         _firstPublishedAt
       }
-      allProjects {
-        slug
-      }
+      
     }
   `,
-  [TagFragment, ResponsiveImageFragment, ContentBlocksFragment],
+  [TagFragment, ResponsiveImageFragment, ContentBlocksFragment, NavigationFragment],
 );
 
 /**

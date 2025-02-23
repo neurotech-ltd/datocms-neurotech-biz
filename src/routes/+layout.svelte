@@ -269,6 +269,11 @@
     font-weight: 100;
   }
 
+  :global(li p)
+  {
+    display: inline;
+  }
+
   /*:global(nav) {*/
   /*  background-color: #333;*/
   /*  color: #fff;*/

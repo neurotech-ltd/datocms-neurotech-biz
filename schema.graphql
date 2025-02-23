@@ -60,6 +60,7 @@ type ContactBlockRecord implements RecordInterface {
     markdown: Boolean
   ): String
   id: ItemId!
+  image: FileField
   title: String
 }
 
@@ -375,6 +376,34 @@ input FileFilter {
 Represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point).
 """
 scalar FloatType
+
+"""Block of type Footer Block (footer_block)"""
+type FooterBlockRecord implements RecordInterface {
+  _createdAt: DateTime!
+
+  """Editing URL"""
+  _editingUrl: String
+  _firstPublishedAt: DateTime
+  _isValid: BooleanType!
+  _modelApiKey: String!
+  _publicationScheduledAt: DateTime
+  _publishedAt: DateTime
+
+  """Generates SEO and Social card meta tags to be used in your frontend"""
+  _seoMetaTags(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+  ): [Tag!]!
+  _status: ItemStatus!
+  _unpublishingScheduledAt: DateTime
+  _updatedAt: DateTime!
+  description(
+    """Process content as markdown"""
+    markdown: Boolean
+  ): String
+  id: ItemId!
+  title: String
+}
 
 type GlobalSeoField {
   facebookPageUrl: String
@@ -2642,6 +2671,30 @@ type LatLonField {
   longitude: FloatType!
 }
 
+"""Specifies how to filter Single-link fields"""
+input LinkFilter {
+  """
+  Search for records with an exact match. The specified value must be a Record ID
+  """
+  eq: ItemId
+
+  """
+  Exclude records with an exact match. The specified value must be a Record ID
+  """
+  neq: ItemId
+
+  """Filter records linked to one of the specified records"""
+  in: [ItemId]
+
+  """Filter records not linked to one of the specified records"""
+  notIn: [ItemId]
+
+  """
+  Filter records with the specified field defined (i.e. with any value) or not
+  """
+  exists: BooleanType
+}
+
 """Specifies how to filter Multiple-links fields"""
 input LinksFilter {
   """
@@ -2992,6 +3045,7 @@ input ProjectModelFilter {
   description: TextFilter
   featurePills: StringFilter
   heroImage: FileFilter
+  navigation: LinkFilter
   seoAnalysis: JsonFilter
   seoSettingsSocial: SeoFilter
   slug: SlugFilter
@@ -3057,6 +3111,7 @@ type ProjectRecord implements RecordInterface {
   featurePills: String
   heroImage: FileField
   id: ItemId!
+  navigation: NavigationRecord
   seoAnalysis: JsonField
   seoSettingsSocial: SeoField
   slug: String
@@ -3413,7 +3468,7 @@ type ResponsiveImage {
   width: IntType!
 }
 
-union SectionBlockModelBlocsField = ContactBlockRecord | ContentBlockRecord | HeroImageBlockRecord | MapBlockRecord | ProjectsBlockRecord | TeamBlockRecord
+union SectionBlockModelBlocsField = ContactBlockRecord | ContentBlockRecord | FooterBlockRecord | HeroImageBlockRecord | MapBlockRecord | ProjectsBlockRecord | TeamBlockRecord
 
 """Block of type Section Block (section_block)"""
 type SectionBlockRecord implements RecordInterface {
