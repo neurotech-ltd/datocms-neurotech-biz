@@ -54,7 +54,7 @@
 </script>
 
 {#if homepage}
-    <PageBloc class="home-page">
+    <PageBloc class="home-page" fixedPageWidth={false}>
         <LayoutBloc direction="column">
             <NavigationBlock data="{homepage.navigation}"> </NavigationBlock>
             <ContentBlocks data="{homepage.content}">
