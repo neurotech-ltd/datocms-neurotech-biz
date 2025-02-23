@@ -67,6 +67,7 @@
         margin-bottom: 16px;
         min-height: 520px;
     }
+
     @media (min-width: 1024px) {
         .project {
             flex-direction: row;

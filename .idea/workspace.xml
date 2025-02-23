@@ -5,11 +5,11 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="workspace.xml">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="PageLayout styling, fixed page width optional.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectsBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/NavigationBlock/fragments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/NavigationBlock/fragments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/NavigationBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/NavigationBlock/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,20 +102,6 @@
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
       <workItem from="1739975630582" duration="36637000" />
-    </task>
-    <task id="LOCAL-00019" summary="wip fix layout issue on ios.">
-      <created>1732798580406</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1732798580406</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Project page renders bloc content from cms.">
-      <created>1732812890524</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1732812890524</updated>
     </task>
     <task id="LOCAL-00021" summary="project nav re-positioned.">
       <created>1732813884019</created>
@@ -446,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1740312423451</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Project styling mobile first">
+      <created>1740312915429</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1740312915429</updated>
+    </task>
+    <task id="LOCAL-00069" summary="PageLayout styling, fixed page width optional.">
+      <created>1740312939028</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1740312939029</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,8 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Upgraded to svelte 5." />
-    <MESSAGE value="Animates element into view when appears on the page." />
     <MESSAGE value="Added animations." />
     <MESSAGE value="Swapped out bugged datocms head component." />
     <MESSAGE value="Erroneously Prettified" />
@@ -501,7 +499,9 @@
     <MESSAGE value="Removed static build config" />
     <MESSAGE value="css updated for mobile first" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Project styling mobile first" />
+    <MESSAGE value="PageLayout styling, fixed page width optional." />
+    <option name="LAST_COMMIT_MESSAGE" value="PageLayout styling, fixed page width optional." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
