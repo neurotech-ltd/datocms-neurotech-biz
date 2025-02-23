@@ -22,7 +22,7 @@
         {#each unmaskedBlock.members as member, i}
             <div class="team-block-member">
                 <div class="member-photo">
-                    <ResponsiveImage data={member.image.responsiveImage} imgClass="member-photo-img" ></ResponsiveImage>
+                    <ResponsiveImage data={member.image.responsiveImage} imgClass="member-photo-img"></ResponsiveImage>
                 </div>
                 <div class="member-details">
                     <h1>{member.name}</h1>
@@ -95,14 +95,24 @@
 
     .team-block-member {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
-        height: 350px;
+        min-height: 350px;
         padding: var(--page-margin);
-        margin-bottom: calc(var(--page-margin ));
     }
 
-    .member-photo{
+    /*@media (min-width: 768px) {*/
+    /*    .team-block-member {*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
+    @media (min-width: 1024px) {
+        .team-block-member {
+            flex-direction: row;
+        }
+    }
+
+    .member-photo {
         width: 300px;
         height: 300px;
         min-height: 300px;
@@ -113,17 +123,25 @@
         border-radius: 1000px;
         overflow: hidden;
     }
-    .member-details{
-        padding-left: var(--page-margin);
-        padding-right: var(--page-margin);
+
+    .member-details {
+        padding-top: var(--page-margin);
     }
+
+    /* Tighten up the spacing between the pronouns and role*/
     .member-details > p:nth-child(2),
-    .member-details > p:nth-child(3)
-    {
+    .member-details > p:nth-child(3) {
         line-height: 0.5rem;
     }
 
-    :global(.team-block picture > .member-photo-img){
+    @media (min-width: 1024px) {
+        .member-details {
+            padding-top: 0;
+            margin-left: var(--page-margin); /* space away from image. */
+        }
+    }
+
+    :global(.team-block picture > .member-photo-img) {
         width: 300px !important;
         height: 300px !important;
         object-fit: cover;
