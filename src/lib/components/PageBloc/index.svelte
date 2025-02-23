@@ -29,7 +29,6 @@
         gap: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 130px;
         padding: 0;
         width: auto;
         height: max-content;
