@@ -1,7 +1,4 @@
 <script lang="ts">
-  import {onMount} from 'svelte';
-  import Inview from '../../Inview/index.svelte';
-  import {SectionBlockFragment} from "../SectionBlock/fragments";
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
   import {
     isBlock,
@@ -16,9 +13,10 @@
   import Block from '$lib/components/Block/index.svelte';
   import InlineItem from '$lib/components/InlineItem/index.svelte';
   import ItemLink from '$lib/components/ItemLink/index.svelte';
+  import {ContentBlockFragment} from "./fragments";
 
   interface Props {
-    data: FragmentOf<typeof SectionBlockFragment>;
+    data: FragmentOf<typeof ContentBlockFragment>;
     // flush?: boolean;
     // useMaxWidth?: boolean;
     // align?: string;
@@ -35,11 +33,8 @@
     // children,
   }: Props = $props();
 
-  let unmaskedBlock = $derived(readFragment(SectionBlockFragment, data));
+  let unmaskedBlock = $derived(readFragment(ContentBlockFragment, data));
 
-  // end WIP.
-  let loaded = $state(false);
-  onMount(() => (loaded = true));
 </script>
 
 <!--{#snippet StructuredTextBloc(content)}-->
@@ -106,7 +101,6 @@
         margin: 0;
         width: auto;
         height: fit-content;
-        flex: 1 1 0;
 
         /*Added to avoid scroll behaviour on parent element. (on page/slug )*/
         overflow-x: clip;
