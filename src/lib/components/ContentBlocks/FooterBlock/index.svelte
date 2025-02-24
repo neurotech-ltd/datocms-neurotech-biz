@@ -1,11 +1,7 @@
 <script lang="ts">
-  // Note when rendering description field which is multiline textfield in datocms
-  // https://stackoverflow.com/questions/62678330/how-do-i-render-datocms-markdown-text-using-wysiwyg
-
-
   import {FooterBlockFragment,} from "./fragments";
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
-
+  import {marked} from 'marked';
 
   interface Props {
     data: FragmentOf<typeof FooterBlockFragment>;
@@ -17,8 +13,8 @@
 </script>
 
 <div class="footer-block">
-    <div class="footer-content">
-        <p>{unmaskedBlock.description}</p>
+    <div class="footer-content on_dark">
+        {@html marked(unmaskedBlock.description)}
     </div>
 </div>
 
@@ -34,9 +30,11 @@
         text-align: center;
     }
 
-    .footer-content p {
-        color: white;
-        white-space: pre-line
+    :global(.footer-content p) {
 
+    }
+
+    .on_dark {
+        --text-color: #FFFFFF;
     }
 </style>
