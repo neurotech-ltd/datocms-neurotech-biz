@@ -19,14 +19,7 @@
   let page = $derived($subscription.data?.page);
 
 </script>
-<!--
-Note, that currently working on structure of datocms data and routes. Hence we have
-/project and /projects which essentially does the same thing, where /projects is rendered
-by /[slug]/page.svelte and /project is rendered by /projects/page.svelte.
 
-Will probably refactor as this route /src/routes/project would conflict with the /src/routes/[slug] where project is
-an endpoint. I.e. if you create a page in the csm ith the slug project does it override this page.svelte???
--->
 {#if page}
     <PageBloc class="projects-page" fixedPageWidth={false}>
         <LayoutBloc direction="column">
