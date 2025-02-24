@@ -19,7 +19,7 @@ const query = graphql(
           ...TagFragment
         }
         title
-        shortDescription
+        description
         _firstPublishedAt
         content {
           ...ContentBlocksFragment
