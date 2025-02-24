@@ -5,16 +5,12 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="styled project cards">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Added the Head element to support seo data from datocms.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/FooterBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/FooterBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/datocms/recordInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/datocms/recordInfo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +103,6 @@
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
       <workItem from="1739975630582" duration="36637000" />
-    </task>
-    <task id="LOCAL-00031" summary="Added basic fade animation.">
-      <created>1733165151189</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1733165151189</updated>
     </task>
     <task id="LOCAL-00032" summary="removed the hidden as it may affect seo. Need to check for animation glitches.">
       <created>1733166063467</created>
@@ -451,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740409964994</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Added the Head element to support seo data from datocms.">
+      <created>1740412028441</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1740412028441</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unecessary files." />
     <MESSAGE value="Remember intelij settings." />
     <MESSAGE value="Updated config for static export" />
     <MESSAGE value="Rebuilt fragments and dato models." />
@@ -506,7 +501,8 @@
     <MESSAGE value="Added Project Page layout." />
     <MESSAGE value="Added page/slug" />
     <MESSAGE value="styled project cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="styled project cards" />
+    <MESSAGE value="Added the Head element to support seo data from datocms." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Head element to support seo data from datocms." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,7 +21,7 @@ export async function recordToWebsiteRoute(
       return '/';
     }
     case 'page': {
-      return `/page/${await recordToSlug(item, itemTypeApiKey, locale)}`;
+      return `/${await recordToSlug(item, itemTypeApiKey, locale)}`;
     }
     case 'project': {
       return `/project/${await recordToSlug(item, itemTypeApiKey, locale)}`;
