@@ -8,6 +8,7 @@
   import MapBlock from "../MapBlock/index.svelte";
   import HeroImageBlock from "../HeroImageBlock/index.svelte";
   import FooterBlock from "../FooterBlock/index.svelte";
+  import ProjectCardsBlock from "../ProjectCardsBlock/index.svelte";
 
   interface Props {
     data: FragmentOf<typeof SectionBlockFragment>;
@@ -50,7 +51,8 @@
 
         {:else if blocContent.__typename === 'FooterBlockRecord'}
             <FooterBlock data={blocContent}></FooterBlock>
-
+        {:else if blocContent.__typename === 'ProjectCardsBlockRecord'}
+            <ProjectCardsBlock data={blocContent}></ProjectCardsBlock>
         {/if}
     {/each}
 </div>

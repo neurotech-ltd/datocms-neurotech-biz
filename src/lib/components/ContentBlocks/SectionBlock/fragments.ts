@@ -6,6 +6,7 @@ import {ContactBlockFragment} from "../ContactBlock/fragments";
 import {MapBlockFragment} from "../MapBlock/fragments";
 import {HeroImageBlockFragment} from "../HeroImageBlock/fragments";
 import {FooterBlockFragment} from "../FooterBlock/fragments";
+import {ProjectCardsBlockFragment} from "../ProjectCardsBlock/fragments";
 
 /**
  * Let's define the GraphQL fragment needed for the component to function.
@@ -57,8 +58,12 @@ export const SectionBlockFragment = graphql(
                 {
                     ...FooterBlockFragment
                 }
+                ... on ProjectCardsBlockRecord
+                {
+                    ...ProjectCardsBlockFragment
+                }
             }
         }
   `,
-  [ContentBlockFragment, TeamBlockFragment, ProjectsBlockFragment, ContactBlockFragment, MapBlockFragment, HeroImageBlockFragment,FooterBlockFragment,],
+  [ContentBlockFragment, TeamBlockFragment, ProjectsBlockFragment, ContactBlockFragment, MapBlockFragment, HeroImageBlockFragment,FooterBlockFragment,ProjectCardsBlockFragment],
 );
