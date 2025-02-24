@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {querySubscription} from '@datocms/svelte';
+  import {Head, querySubscription} from '@datocms/svelte';
 
   import type {PageData} from './$types';
   import PageBloc from "../../lib/components/PageBloc/index.svelte";
@@ -28,6 +28,7 @@ Will probably refactor as this route /src/routes/project would conflict with the
 an endpoint. I.e. if you create a page in the csm ith the slug project does it override this page.svelte???
 -->
 {#if page}
+    <Head data={page._seoMetaTags}></Head>
     <PageBloc class="projects-page" fixedPageWidth={false}>
         <LayoutBloc direction="column">
             <NavigationBlock data="{page.navigation}"></NavigationBlock>

@@ -243,24 +243,6 @@
     text-decoration: underline;
   }
 
-  /*
-     Style <a/> elements that are not associated with some sibling text.
-     For BCC website this is a black box with white text matching the logo.
-     */
-
-  /*:global(p > a:first-child:last-child) {*/
-  /*  text-decoration: underline;*/
-  /*  background-color: black;*/
-  /*  color: white;*/
-  /*  padding: 4px;*/
-  /*  font-style: oblique;*/
-  /*}*/
-
-  /*:global(h4 a:after)*/
-  /*{*/
-  /*    content: "🔗";*/
-  /*}*/
-
   :global(p) {
     color: var(--text-color);
     /*margin-bottom: 16px;*/
@@ -273,20 +255,6 @@
   {
     display: inline;
   }
-
-  /*:global(nav) {*/
-  /*  background-color: #333;*/
-  /*  color: #fff;*/
-  /*}*/
-
-  /*:global(nav a) {*/
-  /*  color: #fff;*/
-  /*  text-decoration: none;*/
-  /*}*/
-
-  /*:global(nav a:hover) {*/
-  /*  background-color: #575757;*/
-  /*}*/
 
 
   .lato-thin {

@@ -5,12 +5,16 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Added Project Page layout.">
-      <change afterPath="$PROJECT_DIR$/src/routes/[slug]/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[slug]/+page.svelte" afterDir="false" />
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="styled project cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectCardsBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/ProjectCardsBlock/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[slug]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/page/[slug]/+page.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/project/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,20 +107,6 @@
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
       <workItem from="1739975630582" duration="36637000" />
-    </task>
-    <task id="LOCAL-00029" summary="Addressing issue with mobile layout due to incorect width sizing on mobile.">
-      <created>1733144549499</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1733144549499</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Fixed a link underline and graphql bug">
-      <created>1733150830115</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1733150830115</updated>
     </task>
     <task id="LOCAL-00031" summary="Added basic fade animation.">
       <created>1733165151189</created>
@@ -447,7 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1740406473085</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Added page/slug">
+      <created>1740409949730</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1740409949730</updated>
+    </task>
+    <task id="LOCAL-00079" summary="styled project cards">
+      <created>1740409964994</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1740409964994</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimise font weights" />
-    <MESSAGE value="Fix intellij formatting." />
     <MESSAGE value="Removed unecessary files." />
     <MESSAGE value="Remember intelij settings." />
     <MESSAGE value="Updated config for static export" />
@@ -502,7 +504,9 @@
     <MESSAGE value="Added footer reference and partial Page layout update." />
     <MESSAGE value="Added ProjectsCard Block" />
     <MESSAGE value="Added Project Page layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Project Page layout." />
+    <MESSAGE value="Added page/slug" />
+    <MESSAGE value="styled project cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="styled project cards" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

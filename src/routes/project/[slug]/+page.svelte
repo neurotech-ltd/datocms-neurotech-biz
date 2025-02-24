@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {querySubscription} from '@datocms/svelte';
+  import {Head, querySubscription} from '@datocms/svelte';
   import type {ProjectData} from './$types';
   import PageBloc from "../../../lib/components/PageBloc/index.svelte";
   import LayoutBloc from "../../../lib/components/LayoutBloc/index.svelte";
@@ -15,6 +15,7 @@
 </script>
 
 {#if project}
+    <Head data={project._seoMetaTags}></Head>
     <PageBloc class="project-page" fixedPageWidth={false}>
         <LayoutBloc direction="column" grow="1">
             <NavigationBlock data="{project.navigation}"></NavigationBlock>
