@@ -20,6 +20,10 @@ export const ProjectCardsBlockFragment = graphql(
                     responsiveImage{
                         ...ResponsiveImageFragment
                     }
+                    focalPoint {
+                        x
+                        y
+                    }
                 }
                 slug
             }

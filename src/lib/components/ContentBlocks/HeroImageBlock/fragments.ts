@@ -12,6 +12,10 @@ export const HeroImageBlockFragment = graphql(
                 responsiveImage{
                     ... ResponsiveImageFragment
                 }
+                focalPoint {
+                    x
+                    y
+                }
             }
         }
   `,

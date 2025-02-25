@@ -13,9 +13,15 @@ export const ContactBlockFragment = graphql(
             }
             title
             description
-            image{responsiveImage{
-                ...ResponsiveImageFragment
-            }}
+            image{
+                responsiveImage{
+                    ...ResponsiveImageFragment
+                }
+                focalPoint {
+                    x
+                    y
+                }
+            }
         }
   `,
   [ResponsiveImageFragment],

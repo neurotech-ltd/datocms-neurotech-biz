@@ -21,6 +21,10 @@ export const TeamBlockFragment = graphql(
                     responsiveImage{
                         ... ResponsiveImageFragment
                     }
+                    focalPoint {
+                        x
+                        y
+                    }
                 }
             }
             partners {

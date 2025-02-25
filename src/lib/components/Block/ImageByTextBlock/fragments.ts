@@ -22,6 +22,10 @@ export const ImageByTextBlockFragment = graphql(
         responsiveImage(sizes: "(max-width: 700px) 100vw, 700px") {
           ...ResponsiveImageFragment
         }
+          focalPoint {
+              x
+              y
+          }
       }
       copy
       isAlignedRight
