@@ -171,15 +171,15 @@
 
     /* Flat Button styling parameters
                          */
-    --btn-color-fill: rgba(108, 138, 121, 0.82);
-    --btn-color-fill--hover: #cfe5d9;
+    --btn-color-fill: rgb(28, 52, 108);
+    --btn-color-fill--hover: #313b69;
     --btn-color-stroke: #fff;
     --btn-color-stroke--hover: #fff;
 
     /* Button styling parameters
                      */
-    --txt-btn-color-fill: rgba(38, 49, 43, 0.82);
-    --txt-btn-color-fill--hover: #444d49;
+    --txt-btn-color-fill: #FFFFFF;
+    --txt-btn-color-fill--hover: #FFFFFF;
     --txt-btn-color-stroke: #312626;
     --txt-btn-color-stroke--hover: #493b3b;
   }
