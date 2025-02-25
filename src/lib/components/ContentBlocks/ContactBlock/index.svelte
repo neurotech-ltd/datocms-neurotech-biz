@@ -38,6 +38,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
+        flex-basis: 50%;
         align-content: center;
         justify-content: center;
         text-align: center;
@@ -46,6 +47,7 @@
 
     .contact-block-image {
         flex: 1;
+        flex-basis: 50%;
         height: 100%;
     }
 
