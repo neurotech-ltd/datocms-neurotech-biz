@@ -2,30 +2,51 @@
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
   import {NavigationFragment} from './fragments';
   import ResponsiveImage from "../ResponsiveImage/index.svelte";
+  import Link from "../Link/index.svelte";
 
   interface Props {
     data: FragmentOf<typeof NavigationFragment>;
   }
 
   let {data}: Props = $props();
-
   let unmaskedBlock = $derived(readFragment(NavigationFragment, data));
+
+  function parseLinkPath(link) {
+    try {
+      console.log("=== " + link);
+      switch (link.__typename) {
+        case "PageRecord":
+          return `/${link.slug}`;
+        case "ProjectRecord":
+          return `/project/${link.slug}`;
+        default:
+          return "";
+      }
+    } catch (e) {
+      return "/";
+    }
+  }
+
 </script>
 
 <div class="navigation">
-
-    <div class="navigation-logo">
-        <ResponsiveImage data="{unmaskedBlock.logo.responsiveImage}"></ResponsiveImage>
-    </div>
-    <nav aria-label="Main Navigation" class="navigation-menu">
+    <a class="navigation-logo" href="/">
+        <div >
+            <ResponsiveImage data="{unmaskedBlock.logo.responsiveImage}"></ResponsiveImage>
+        </div>
+    </a>
+    <nav aria-label="Main" class="navigation-menu">
         <ul>
             {#each unmaskedBlock.menuItems as menuItem, i}
                 <!--                <p>{JSON.stringify(menuItem, null, 4)}</p>-->
                 <!-- TODO (emileswain) fix link building -->
-                <li><a href={'/project/'+menuItem.link?.slug ?? ""} aria-label={menuItem.title}>{menuItem.title}</a>
+                <li>
+                    <a href={parseLinkPath(menuItem.link)} aria-label={menuItem.title}>{menuItem.title}</a>
+                    <!--                    <Link href={parseLinkPath(menuItem.link)} aria-label={menuItem.title}>{menuItem.title}</Link>-->
                 </li>
             {/each}
         </ul>
+    </nav>
 </div>
 
 <style>
@@ -48,6 +69,8 @@
 
     .navigation-logo {
         max-width: 300px;
+        margin-bottom: 0;
+        /*  overrides a link having default bottom margin.  */
     }
 
     .navigation-menu {

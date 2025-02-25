@@ -19,7 +19,10 @@ export const NavigationFragment = graphql(
   /* GraphQL */ `
     fragment NavigationFragment on NavigationRecord {
         title
-        
+        ... on RecordInterface {
+            id
+            __typename
+        }
         logo {
             responsiveImage{
                 ... ResponsiveImageFragment
@@ -27,17 +30,41 @@ export const NavigationFragment = graphql(
         }
         menuItems{
             title
+            ... on RecordInterface {
+                id
+                __typename
+            }
             link{
+                ... on RecordInterface {
+                    id
+                    __typename
+                }
                 ... on ProjectRecord{
+                    title
+                    slug
+                }
+                ... on PageRecord{
                     title
                     slug
                 }
             }
             menuItems{
                 title
+                ... on RecordInterface {
+                    id
+                    __typename
+                }
                 link{
+                    ... on RecordInterface {
+                        id
+                        __typename
+                    }
                     __typename
                     ... on ProjectRecord{
+                        title
+                        slug
+                    }
+                    ... on PageRecord{
                         title
                         slug
                     }

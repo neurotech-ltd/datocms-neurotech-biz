@@ -3,6 +3,7 @@
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
   import ResponsiveImage from "../../ResponsiveImage/index.svelte";
   import Button from "../../Button/index.svelte";
+  import Link from "../../Link/index.svelte";
 
   interface Props {
     data: FragmentOf<typeof ProjectsBlockFragment>;
@@ -26,7 +27,7 @@
                 <div class="project-details">
                     <h1>{project.title}</h1>
                     <p>{JSON.stringify(project.description, null, 4)}</p>
-                    <a href="/project/{project.slug}" rel="no-prefetch" aria-label="{project.slug}"> More</a>
+                    <Link href="/project/{project.slug}" rel="no-prefetch" aria-label="{project.slug}">More</Link>
                 </div>
                 <div class="project-image">
                     <ResponsiveImage data="{project.heroImage.responsiveImage}"
@@ -66,6 +67,7 @@
         flex-direction: column-reverse;
         margin-bottom: 16px;
         min-height: 520px;
+
     }
 
     @media (min-width: 1024px) {
@@ -77,6 +79,7 @@
     .project-image {
         flex: 1;
         height: 100%;
+        flex-basis: 50%;
     }
 
     :global(.project-image .project-image-control) {
@@ -90,6 +93,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
+        flex-basis: 50%;
         align-content: center;
         justify-content: center;
         text-align: center;
