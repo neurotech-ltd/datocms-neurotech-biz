@@ -84,9 +84,17 @@
 
     :global(.project-image .project-image-control) {
         /*need to sort out image sizing.*/
-        height: 550px !important;
-        max-height: 560px !important;
+        height: 300px !important;
+        max-height: 300px !important;
         object-fit: cover !important;
+    }
+    @media (min-width: 1024px) {
+        :global(.project-image .project-image-control) {
+            /*need to sort out image sizing.*/
+            height: 550px !important;
+            max-height: 560px !important;
+            object-fit: cover !important;
+        }
     }
 
     .project-details {
