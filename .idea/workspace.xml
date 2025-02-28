@@ -5,12 +5,9 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="Added the Head element to support seo data from datocms.">
+    <list default="true" id="c276a884-1a8e-4666-a107-6cda24dd7e64" name="Changes" comment="fixed member details lineheights.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentBlocks/FooterBlock/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentBlocks/FooterBlock/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/datocms/recordInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/datocms/recordInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PageBloc/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/NVPACK/android-sdk-windows" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes/[slug]" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ejs-sveltekit-component-library" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -103,97 +100,6 @@
       <workItem from="1735915695134" duration="12249000" />
       <workItem from="1739790727329" duration="5426000" />
       <workItem from="1739975630582" duration="36637000" />
-    </task>
-    <task id="LOCAL-00032" summary="removed the hidden as it may affect seo. Need to check for animation glitches.">
-      <created>1733166063467</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1733166063467</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Added reference articles for animating and issues with SSR, SSG etc.">
-      <created>1733166089342</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1733166089342</updated>
-    </task>
-    <task id="LOCAL-00034" summary="WIP - detect in view animation.">
-      <created>1733168597076</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1733168597076</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Added nested block content. dato:main-v1-0-1">
-      <created>1733488980327</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1733488980327</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Upgraded to svelte 5.">
-      <created>1733504343750</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1733504343750</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Upgraded to svelte 5.">
-      <created>1733504371047</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1733504371047</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Animates element into view when appears on the page.">
-      <created>1733753092193</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1733753092193</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Animates element into view when appears on the page.">
-      <created>1733753108030</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1733753108030</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added animations.">
-      <created>1733756224570</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1733756224570</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Added animations.">
-      <created>1733757244302</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1733757244302</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Swapped out bugged datocms head component.">
-      <created>1733833604676</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1733833604676</updated>
-    </task>
-    <task id="LOCAL-00043" summary="intellij git missed elements?">
-      <created>1733833710539</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1733833710539</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Fixed bad component import breaking netlify build.">
-      <created>1733834882001</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1733834882001</updated>
     </task>
     <task id="LOCAL-00045" summary="Fixed bad component import breaking netlify build.">
       <created>1733834998751</created>
@@ -447,7 +353,98 @@
       <option name="project" value="LOCAL" />
       <updated>1740412028441</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Added Marked to footer">
+      <created>1740423400157</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1740423400157</updated>
+    </task>
+    <task id="LOCAL-00082" summary="tweeked seo analysis record type.">
+      <created>1740423423965</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1740423423965</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Added focal point data">
+      <created>1740499129780</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499129780</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Button styling">
+      <created>1740499147116</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499147116</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Navigation &amp; Link styling &amp; path resolution">
+      <created>1740499215469</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499215469</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Added focal point positioning.">
+      <created>1740499247967</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499247967</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Fixed 50% flex spacing">
+      <created>1740499280116</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499280116</updated>
+    </task>
+    <task id="LOCAL-00088" summary="updated to svelte5 syntax">
+      <created>1740759818560</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759818560</updated>
+    </task>
+    <task id="LOCAL-00089" summary="ContactBlock mobile first">
+      <created>1740759846074</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759846074</updated>
+    </task>
+    <task id="LOCAL-00090" summary="mobile first styling for general text content">
+      <created>1740759884246</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759884246</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Fixed focal point issue">
+      <created>1740759911789</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759911789</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Updated project layout and image sizing for mobile">
+      <created>1740759957463</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759957463</updated>
+    </task>
+    <task id="LOCAL-00093" summary="fixed member details lineheights.">
+      <created>1740759992632</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1740759992632</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,19 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remember intelij settings." />
-    <MESSAGE value="Updated config for static export" />
-    <MESSAGE value="Rebuilt fragments and dato models." />
-    <MESSAGE value="Added HeroImage Block" />
-    <MESSAGE value="Styling for Neurotech" />
-    <MESSAGE value="Styling for Team page" />
-    <MESSAGE value="Styling for projects" />
-    <MESSAGE value="Styling for map and contact us." />
-    <MESSAGE value="Removed prerender" />
-    <MESSAGE value="Removed static build config" />
-    <MESSAGE value="css updated for mobile first" />
-    <MESSAGE value="workspace.xml" />
-    <MESSAGE value="Project styling mobile first" />
     <MESSAGE value="PageLayout styling, fixed page width optional." />
     <MESSAGE value="Temporary link fix." />
     <MESSAGE value="Corrected fragment reference" />
@@ -502,7 +486,20 @@
     <MESSAGE value="Added page/slug" />
     <MESSAGE value="styled project cards" />
     <MESSAGE value="Added the Head element to support seo data from datocms." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the Head element to support seo data from datocms." />
+    <MESSAGE value="Added Marked to footer" />
+    <MESSAGE value="tweeked seo analysis record type." />
+    <MESSAGE value="Added focal point data" />
+    <MESSAGE value="Button styling" />
+    <MESSAGE value="Navigation &amp; Link styling &amp; path resolution" />
+    <MESSAGE value="Added focal point positioning." />
+    <MESSAGE value="Fixed 50% flex spacing" />
+    <MESSAGE value="updated to svelte5 syntax" />
+    <MESSAGE value="ContactBlock mobile first" />
+    <MESSAGE value="mobile first styling for general text content" />
+    <MESSAGE value="Fixed focal point issue" />
+    <MESSAGE value="Updated project layout and image sizing for mobile" />
+    <MESSAGE value="fixed member details lineheights." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed member details lineheights." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

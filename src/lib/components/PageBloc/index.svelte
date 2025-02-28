@@ -27,8 +27,8 @@
         display: flex;
         flex: 1 1 0;
         gap: 0;
-        margin-left: auto;
-        margin-right: auto;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
         padding: 0;
         width: auto;
         height: max-content;
@@ -53,6 +53,8 @@
     @media (min-width: 1140px) {
         .page-bloc-fixed-page-width {
             max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 </style>
