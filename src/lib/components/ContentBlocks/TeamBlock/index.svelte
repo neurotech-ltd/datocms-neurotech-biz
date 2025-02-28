@@ -122,16 +122,18 @@
         object-fit: contain;
         border-radius: 1000px;
         overflow: hidden;
+        align-self: center;
     }
 
     .member-details {
         padding-top: var(--page-margin);
     }
-
     /* Tighten up the spacing between the pronouns and role*/
-    .member-details > p:nth-child(2),
-    .member-details > p:nth-child(3) {
-        line-height: 0.5rem;
+    .member-details > p{
+        margin-bottom: 0;
+    }
+    .member-details > p:last-child{
+        margin-top: 1rem;
     }
 
     @media (min-width: 1024px) {
@@ -139,6 +141,8 @@
             padding-top: 0;
             margin-left: var(--page-margin); /* space away from image. */
         }
+
+
     }
 
     :global(.team-block picture > .member-photo-img) {
