@@ -29,7 +29,7 @@
     /* set default margins of content.*/
     .contact-block {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         height: fit-content;
     }
@@ -49,13 +49,18 @@
         flex: 1;
         flex-basis: 50%;
         height: 100%;
+        max-height: 300px;
     }
 
     :global(.contact-block  .contact-block-image-control) {
         /*need to sort out image sizing.*/
-        height: 550px !important;
-        max-height: 560px !important;
+        /*height: 300px !important;*/
+        /*max-height: 300px !important;*/
+        height:100% !important;
         object-fit: cover !important;
+    }
+    :global(.contact-block-image > picture) {
+        height:100%;
     }
 
     .on_light {
@@ -67,5 +72,14 @@
     .on_dark {
         background-color: #1C346C;
         --text-color: white;
+    }
+
+    @media (min-width: 1024px) {
+        .contact-block {
+            flex-direction: row;
+        }
+        .contact-block-image{
+            max-height: unset;
+        }
     }
 </style>
