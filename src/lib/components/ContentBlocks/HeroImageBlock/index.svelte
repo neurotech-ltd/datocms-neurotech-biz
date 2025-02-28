@@ -2,7 +2,8 @@
   import {HeroImageBlockFragment} from "./fragments";
   import {readFragment, type FragmentOf} from '$lib/datocms/graphql';
   import ResponsiveImage from "../../ResponsiveImage/index.svelte";
-  import { onMount } from 'svelte';
+  import {onMount} from 'svelte';
+
   interface Props {
     data: FragmentOf<typeof HeroImageBlockFragment>;
   }
@@ -12,18 +13,21 @@
   let unmaskedBlock = $derived(readFragment(HeroImageBlockFragment, data));
 
   function updateStyles() {
+
     let focalPoint = unmaskedBlock.image.focalPoint;
-    console.log(JSON.stringify(focalPoint, null, 4));
+    // console.log(JSON.stringify(focalPoint, null, 4));
     let root = document.querySelector('.hero-image-block');
     root.style.setProperty('--focal-point-x', `${focalPoint.x * 100}%`);
     root.style.setProperty('--focal-point-y', `${focalPoint.y * 100}%`);
   }
 
   onMount(() => {
-    // console.log('Project.onMount():  ', project.slug);
     updateStyles();
   });
 
+  $effect(() => {
+    updateStyles();
+  })
 </script>
 
 <div class="hero-image-block">
