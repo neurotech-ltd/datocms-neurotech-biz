@@ -107,6 +107,7 @@
         max-width: 100vw;
     }
 
+
     .on_light {
         /*    Dark text on light background */
         background-color: #eaeaea;
@@ -123,6 +124,12 @@
         align-content: center;
         min-height: 400px;
         padding:var(--page-margin)
+    }
+
+    :global(.centred_text_block > p){
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content-bloc-header {
